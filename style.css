@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #0b1020;
+    color: white;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 25px;
+    background: #172238;
+    border-radius: 15px;
+    text-align: center;
+}
+
+h1 {
+    color: #62e6e0;
+}
+
+#pergunta {
+    margin: 25px 0;
+}
+
+#alternativas {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.alternativa {
+    padding: 14px;
+    border: 1px solid #40516c;
+    border-radius: 10px;
+    background: #24334d;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.alternativa:hover:not(:disabled) {
+    background: #34506c;
+}
+
+.correta {
+    background: #176b4a !important;
+}
+
+.errada {
+    background: #9b3045 !important;
+}
+
+button {
+    padding: 12px 18px;
+    border: none;
+    border-radius: 8px;
+    background: #62e6e0;
+    color: #0b1020;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+#feedback {
+    min-height: 24px;
+}
+
+.progresso {
+    height: 8px;
+    background: #35415a;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 20px 0;
+}
+
+#barra {
+    width: 0%;
+    height: 100%;
+    background: #62e6e0;
+    transition: width 0.3s;
+}
+
+.escondido {
+    display: none;
+}
+
+@media (max-width: 480px) {
+    .container {
+        margin: 10px auto;
+        padding: 18px;
+    }
+}

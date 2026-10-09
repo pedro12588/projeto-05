@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Quiz de Disciplina</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js" defer></script>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Quiz de Disciplina</h1>
+
+        <p>Teste seus conhecimentos!</p>
+
+        <div class="progresso">
+
+            <div id="barra"></div>
+
+        </div>
+
+        <h2 id="pergunta">Pergunta aparecerá aqui</h2>
+
+        <div id="alternativas"></div>
+
+        <p id="feedback"></p>
+
+        <p id="pontuacao">Pontuação: 0</p>
+
+        <button id="proximo" disabled>
+
+            Próxima pergunta
+
+        </button>
+
+        <div id="resultado" class="escondido">
+
+            <h2>Quiz finalizado!</h2>
+
+            <p id="mensagem"></p>
+
+            <button onclick="reiniciar()">Reiniciar quiz</button>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
